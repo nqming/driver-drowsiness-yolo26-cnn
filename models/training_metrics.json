@@ -1,0 +1,55 @@
+{
+  "architecture": "MobileNetV3-Small (Transfer Learning)",
+  "yolo_backbone": "yolo26n.pt (NMS-Free End-to-End)",
+  "img_size": 128,
+  "class_names": [
+    "Closed",
+    "Open",
+    "no_yawn",
+    "yawn"
+  ],
+  "total_params": 1521956,
+  "epochs_trained": 12,
+  "best_epoch": 10,
+  "best_val_acc": 100.0,
+  "train_seconds": 594.2,
+  "dataset_splits": {
+    "train": 4720,
+    "val": 590,
+    "test": 590,
+    "total": 5900
+  },
+  "eval_summary": {
+    "Dataset1_YawnEye": {
+      "samples": 290,
+      "accuracy": 100.0,
+      "precision_macro": 100.0,
+      "recall_macro": 100.0,
+      "f1_macro": 100.0,
+      "f1_weighted": 100.0
+    },
+    "Dataset2_MRLEye": {
+      "samples": 300,
+      "accuracy": 100.0,
+      "precision_macro": 100.0,
+      "recall_macro": 100.0,
+      "f1_macro": 100.0,
+      "f1_weighted": 100.0
+    },
+    "Combined_All": {
+      "samples": 590,
+      "accuracy": 100.0,
+      "precision_macro": 100.0,
+      "recall_macro": 100.0,
+      "f1_macro": 100.0,
+      "f1_weighted": 100.0
+    }
+  },
+  "roc_auc": {
+    "Closed": 1.0,
+    "Open": 1.0,
+    "no_yawn": 1.0,
+    "yawn": 1.0,
+    "micro_avg": 1.0
+  }
+}

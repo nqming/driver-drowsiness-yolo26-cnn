@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Environment & IDE
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large raw datasets & temporary uploads (tự động tải qua training/download_datasets.py)
+data/merged_dataset/
+data/uploads/
+models/torch_cache/
+
+# Duplicate root weights (đã lưu tập trung tại models/yolo26n.pt)
+/yolo26n.pt
+
+# Runtime logs & local SQLite database
+logs/*.db
+logs/snapshots/*.jpg
+logs/snapshots/*.png
+!logs/snapshots/.gitkeep

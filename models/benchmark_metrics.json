@@ -1,0 +1,37 @@
+{
+  "device": "CPU",
+  "cpu_cores": 16,
+  "yolo_model": "yolo26n.pt",
+  "yolo_params": 2572280,
+  "yolo_size_mb": 5.29,
+  "cnn_model": "MobileNetV3-Small",
+  "cnn_params": 1521956,
+  "cnn_size_mb": 5.94,
+  "total_params": 4094236,
+  "resolutions": [
+    {
+      "imgsz": 320,
+      "yolo_ms": 51.81,
+      "roi_ms": 0.82,
+      "cnn_ms": 28.59,
+      "total_ms": 80.46,
+      "fps": 12.4
+    },
+    {
+      "imgsz": 480,
+      "yolo_ms": 62.5,
+      "roi_ms": 0.85,
+      "cnn_ms": 22.25,
+      "total_ms": 87.14,
+      "fps": 11.5
+    },
+    {
+      "imgsz": 640,
+      "yolo_ms": 76.74,
+      "roi_ms": 0.83,
+      "cnn_ms": 21.02,
+      "total_ms": 99.15,
+      "fps": 10.1
+    }
+  ]
+}

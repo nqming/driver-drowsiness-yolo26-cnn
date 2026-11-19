@@ -1,0 +1,126 @@
+/* Giao diện Buồng lái Ô tô Thông minh (Dark-Mode Automotive Cockpit HUD) */
+
+:root {
+  --bg-cockpit: #060b16;
+  --panel-bg: rgba(15, 23, 42, 0.86);
+  --panel-border: rgba(51, 65, 85, 0.72);
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-red: #ef4444;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(37, 99, 235, 0.14), transparent 35%),
+    radial-gradient(circle at 85% 15%, rgba(124, 58, 237, 0.12), transparent 35%),
+    linear-gradient(180deg, #050914 0%, #091122 100%);
+  color: #e2e8f0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.cockpit-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cockpit-card:hover {
+  border-color: rgba(96, 165, 250, 0.45);
+}
+
+/* Hiệu ứng nhấp nháy khẩn cấp Mức 2 */
+@keyframes dangerPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.75), inset 0 0 24px rgba(239, 68, 68, 0.35);
+    border-color: #ef4444;
+  }
+  50% {
+    box-shadow: 0 0 28px 6px rgba(239, 68, 68, 0.55), inset 0 0 40px rgba(239, 68, 68, 0.55);
+    border-color: #fca5a5;
+  }
+}
+
+.alert-danger-flash {
+  animation: dangerPulse 0.85s infinite ease-in-out;
+}
+
+/* Cần số P / N / D */
+.gear-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gear-btn.active-P {
+  background: linear-gradient(135deg, #475569, #334155);
+  color: #f8fafc;
+  border-color: #94a3b8;
+  box-shadow: 0 0 16px rgba(148, 163, 184, 0.4);
+}
+
+.gear-btn.active-N {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  color: #ffffff;
+  border-color: #fbbf24;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.45);
+}
+
+.gear-btn.active-D {
+  background: linear-gradient(135deg, #059669, #047857);
+  color: #ffffff;
+  border-color: #34d399;
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.5);
+}
+
+/* Thanh trượt tùy chỉnh phong cách buồng lái */
+input[type="range"].cockpit-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  background: #1e293b;
+  outline: none;
+}
+
+input[type="range"].cockpit-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #38bdf8;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.75);
+}
+
+.roi-thumb {
+  image-rendering: auto;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  background: #0f172a;
+}
+
+.mono-num {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Thanh cuộn tinh gọn */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

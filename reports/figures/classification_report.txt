@@ -1,0 +1,54 @@
+====================================================================================
+BÁO CÁO ĐÁNH GIÁ MÔ HÌNH HỌC SÂU CNN (MOBILENETV3-SMALL TRANSFER LEARNING)
+Đề tài: Nhận dạng trạng thái buồn ngủ của người điều khiển phương tiện ô tô
+        sử dụng kết hợp mô hình YOLO26 và mạng học sâu CNN
+====================================================================================
+
+- Kiến trúc mô hình     : MobileNetV3-Small (1,521,956 tham số)
+- Kích thước đầu vào    : 128x128x3 (RGB chuẩn hóa ImageNet)
+- Epoch tốt nhất        : 10 (Val Accuracy = 100.00%)
+- Tổng thời gian train  : 594.2 giây
+
+------------------------------------------------------------------------------------
+1. KẾT QUẢ TRÊN TẬP TEST BỘ DỮ LIỆU 1: DROWSINESS YAWN-EYE DATASET (RGB BAN NGÀY)
+   Số mẫu kiểm thử: 290 | Accuracy: 100.00% | Macro F1-Score: 100.00%
+------------------------------------------------------------------------------------
+                       precision    recall  f1-score   support
+
+    Nhắm mắt (Closed)     1.0000    1.0000    1.0000        73
+        Mở mắt (Open)     1.0000    1.0000    1.0000        72
+Bình thường (No Yawn)     1.0000    1.0000    1.0000        73
+          Ngáp (Yawn)     1.0000    1.0000    1.0000        72
+
+             accuracy                         1.0000       290
+            macro avg     1.0000    1.0000    1.0000       290
+         weighted avg     1.0000    1.0000    1.0000       290
+
+------------------------------------------------------------------------------------
+2. KẾT QUẢ TRÊN TẬP TEST BỘ DỮ LIỆU 2: MRL EYE DATASET (HỒNG NGOẠI NIR BAN ĐÊM)
+   Số mẫu kiểm thử: 300 | Accuracy: 100.00% | Macro F1-Score: 100.00%
+------------------------------------------------------------------------------------
+                   precision    recall  f1-score   support
+
+Nhắm mắt (Closed)     1.0000    1.0000    1.0000       150
+    Mở mắt (Open)     1.0000    1.0000    1.0000       150
+
+         accuracy                         1.0000       300
+        macro avg     1.0000    1.0000    1.0000       300
+     weighted avg     1.0000    1.0000    1.0000       300
+
+------------------------------------------------------------------------------------
+3. KẾT QUẢ TRÊN TẬP TEST TỔNG HỢP ĐA BỘ DỮ LIỆU (NGÀY + ĐÊM)
+   Số mẫu kiểm thử: 590 | Accuracy: 100.00% | Macro F1-Score: 100.00% | Micro ROC-AUC: 1.0000
+------------------------------------------------------------------------------------
+                       precision    recall  f1-score   support
+
+    Nhắm mắt (Closed)     1.0000    1.0000    1.0000       223
+        Mở mắt (Open)     1.0000    1.0000    1.0000       222
+Bình thường (No Yawn)     1.0000    1.0000    1.0000        73
+          Ngáp (Yawn)     1.0000    1.0000    1.0000        72
+
+             accuracy                         1.0000       590
+            macro avg     1.0000    1.0000    1.0000       590
+         weighted avg     1.0000    1.0000    1.0000       590
+

@@ -1,0 +1,32 @@
+{
+  "total_images": 5900,
+  "skipped_corrupted": 0,
+  "dataset1_slug": "serenaraju/yawn-eye-dataset-new",
+  "dataset2_slug": "prasadvpatil/mrl-dataset",
+  "mrl_max_per_class": 1500,
+  "split_counts": {
+    "train": 4720,
+    "val": 590,
+    "test": 590
+  },
+  "class_counts": {
+    "Closed": 2226,
+    "Open": 2226,
+    "no_yawn": 725,
+    "yawn": 723
+  },
+  "source_class_breakdown": {
+    "Dataset1_YawnEye": {
+      "Closed": 726,
+      "Open": 726,
+      "no_yawn": 725,
+      "yawn": 723
+    },
+    "Dataset2_MRLEye": {
+      "Closed": 1500,
+      "Open": 1500,
+      "no_yawn": 0,
+      "yawn": 0
+    }
+  }
+}
