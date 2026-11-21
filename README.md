@@ -222,7 +222,3 @@ Dự án sử dụng 2 bộ dữ liệu công khai chuẩn quốc tế thông qu
    ```
 
 ---
-
-<div align="center">
-  <b>Nếu dự án hữu ích cho nghiên cứu hoặc đồ án của bạn, hãy tặng một ⭐ Star để ủng hộ tác giả!</b>
-</div>
