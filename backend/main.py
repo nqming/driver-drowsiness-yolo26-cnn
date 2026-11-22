@@ -51,7 +51,7 @@ UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(
     title="Hệ thống Nhận dạng Buồn ngủ Tài xế Ô tô (YOLO26 + CNN)",
-    description="Đồ án Đại học: Kết hợp YOLO26 NMS-Free End-to-End và Mạng MobileNetV3-Small trên Đa bộ dữ liệu",
+    description="Kết hợp YOLO26 NMS-Free End-to-End và Mạng MobileNetV3-Small trên Đa bộ dữ liệu",
     version="2.0.0",
 )
 
