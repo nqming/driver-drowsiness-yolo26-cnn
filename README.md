@@ -230,6 +230,3 @@ This project utilizes two public benchmark datasets automatically fetched via `k
 
 ---
 
-<div align="center">
-  <b>If you find this project helpful for your research or portfolio, please consider giving it a ⭐ Star!</b>
-</div>
