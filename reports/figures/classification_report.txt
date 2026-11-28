@@ -1,8 +1,8 @@
-====================================================================================
+
 BÁO CÁO ĐÁNH GIÁ MÔ HÌNH HỌC SÂU CNN (MOBILENETV3-SMALL TRANSFER LEARNING)
 Đề tài: Nhận dạng trạng thái buồn ngủ của người điều khiển phương tiện ô tô
         sử dụng kết hợp mô hình YOLO26 và mạng học sâu CNN
-====================================================================================
+
 
 - Kiến trúc mô hình     : MobileNetV3-Small (1,521,956 tham số)
 - Kích thước đầu vào    : 128x128x3 (RGB chuẩn hóa ImageNet)
