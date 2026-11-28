@@ -24,10 +24,10 @@ Bình thường (No Yawn)     1.0000    1.0000    1.0000        73
             macro avg     1.0000    1.0000    1.0000       290
          weighted avg     1.0000    1.0000    1.0000       290
 
-------------------------------------------------------------------------------------
+
 2. KẾT QUẢ TRÊN TẬP TEST BỘ DỮ LIỆU 2: MRL EYE DATASET (HỒNG NGOẠI NIR BAN ĐÊM)
    Số mẫu kiểm thử: 300 | Accuracy: 100.00% | Macro F1-Score: 100.00%
-------------------------------------------------------------------------------------
+
                    precision    recall  f1-score   support
 
 Nhắm mắt (Closed)     1.0000    1.0000    1.0000       150
