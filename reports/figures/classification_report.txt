@@ -9,10 +9,10 @@ BÁO CÁO ĐÁNH GIÁ MÔ HÌNH HỌC SÂU CNN (MOBILENETV3-SMALL TRANSFER LEARN
 - Epoch tốt nhất        : 10 (Val Accuracy = 100.00%)
 - Tổng thời gian train  : 594.2 giây
 
-------------------------------------------------------------------------------------
+
 1. KẾT QUẢ TRÊN TẬP TEST BỘ DỮ LIỆU 1: DROWSINESS YAWN-EYE DATASET (RGB BAN NGÀY)
    Số mẫu kiểm thử: 290 | Accuracy: 100.00% | Macro F1-Score: 100.00%
-------------------------------------------------------------------------------------
+
                        precision    recall  f1-score   support
 
     Nhắm mắt (Closed)     1.0000    1.0000    1.0000        73
